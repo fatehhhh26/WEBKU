@@ -415,4 +415,227 @@ main {
     border-top: 1px solid #333;
     padding-top: 20px;
 }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000428, #004e92);
+    color: white;
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 100px;  
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+}
+
+.content h1 span {
+    color: orange;
+}
+
+.content p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.sign-up {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.illustration {
+    margin: 40px 0;
+    max-width: 100%;
+    height: auto;
+}
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fc;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.about-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-video {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.about-video img {
+    width: 100%;
+    border-radius: 10px;
+}
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.benefit-item {
+    flex-direction: column;
+    text-align: center;
+}
+
+.benefit-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.benefit-content {
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.testimonial-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section Responsiveness */
+.faq-section {
+    flex-direction: column;
+    padding: 40px 15px;
+}
+
+.faq-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 100%;
+}
+
+/* Footer Section Responsiveness */
+.footer-content {
+    flex-direction: column;
+}
+
+.footer-column {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-icons {
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about-section {
+        flex-wrap: nowrap;
+    }
+
+    .about-content {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
+
+    .about-video {
+        max-width: 45%;
+        margin-top: 0;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefit-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .benefit-icon {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .benefit-content {
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: row;
+    }
+
+    .footer-column {
+        width: 30%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Can be replaced with a mobile menu toggle */
+    }
+}
 
